@@ -1,0 +1,63 @@
+.project {box-sizing:border-box;position:relative;
+    display:flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;}
+
+
+.orange {flex-basis:200px;
+     width:400px; height:300px; border-style: solid;border-width: 4px;background-image: url("/Orange.png");background-size: contain;background-position: center;background-repeat: no-repeat;text-transform: uppercase;animation-name: dance;animation-duration: 10s;background-color:lightgoldenrodyellow;transition:left 5s ease-in 5s;position: relative;}
+
+    .orange {margin:0;}
+
+.laranja {position: relative;
+    ;
+    font-family: 'Modak', cursive;
+font-weight: 900;font-size: 25px;display: inline-flex;left:155px;top:160px;transform-origin: top;
+    transform: rotate(90deg);transform: translate();}
+
+.player{position: absolute;top:59px;font-size: xx-large;font-weight: bolder;}
+button {
+    background-color: hsl(180, 50%, 50%);
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    padding: .3em 1em;
+    transition-property: all;
+    transition-duration: 0.5s;
+    }
+    button:hover {
+    background-color: hsl(0, 50%, 50%);
+    border-radius: 1em;font-size: 40px;;
+    }
+    .container {
+        position: relative;
+        height: 30px;
+        }
+        .box {
+        position: absolute;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: hsl(130, 50%, 50%);
+        transition: all 1s ease-out;
+        }
+        .container:hover .box {
+        left: 400px;}
+
+
+        
+.porto {background-image: url("danilo.jpg");position: relative;
+    background-position:-30px;background-position-y:3px ; background-size: 500px;}
+        .porto {
+            width:300px;height:260px;clip-path: polygon(50% 0%, 61% 35%, 100% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
+.porto:hover {transition: linear;transition-property: all;transition-duration: 1s;transform: rotate(40deg)}
+
+.sj {width:300px;height: 150px;}
+        
+
+        
+
+        
+
+@keyframes dance {
+    from {transform: rotate(50deg) } 
+    to {transform:rotate(5deg)}
+}
