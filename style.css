@@ -3,7 +3,7 @@
 
 
 .orange {flex-basis:200px;
-     width:400px; height:300px; border-style: solid;border-width: 4px;background-image: url("/Orange.png");background-size: contain;background-position: center;background-repeat: no-repeat;text-transform: uppercase;animation-name: dance;animation-duration: 10s;background-color:lightgoldenrodyellow;transition:left 5s ease-in 5s;position: relative;}
+     width:400px; height:300px; border-style: solid;border-width: 4px;background-image: url("Orange.png");background-size: contain;background-position: center;background-repeat: no-repeat;text-transform: uppercase;animation-name: dance;animation-duration: 10s;background-color:lightgoldenrodyellow;transition:left 5s ease-in 5s;position: relative;}
 
     .orange {margin:0;}
 
@@ -51,13 +51,47 @@ button {
 .porto:hover {transition: linear;transition-property: all;transition-duration: 1s;transform: rotate(40deg)}
 
 .sj {width:300px;height: 150px;}
-        
+
+.porto2 {position: relative;
+    transform: skew(4deg);}
+
+    .bubble {position: absolute; width:75px; height:100px;background-color:rgba(252, 247, 251, 0.5);top:4px;left:60px;border-radius: 20px transparent;
+ }
+ .porto2 {border-radius: 10px;border-style: groove;}
+
+ .porto2:hover {transition: ease-out;transition-property: all;transition-duration: 3s ;transform: translate(-300px ,200px);}
+
+.words{ position: absolute;bottom: 5px;left:70px;color: rgb(8, 8, 110) ;
+    font-family: fantasy;font-size: x-large;opacity: .4;}
+
+ .porto2 {position: relative;
+     background-image: 
+ linear-gradient(to bottom, rgba(165, 250, 7, .50), rgba(226, 96, 198, 1)), url("danilo.jpg");width:300px;background-size: cover;background-repeat: no-repeat;
+ height:200px;}
+
+ .list01 {list-style-image:
+    radial-gradient(closest-side,
+    orange, orange 60%, blue 60%, blue 95%, transparent);}
+ ul ul {list-style-image: none;}
+
+ ul::marker{margin-right:
+    0.125em; color: goldenrod;}
+
+    ul::before {content:"";color: blue";}
+
+
 
         
 
         
 
-@keyframes dance {
+        
+
+;@keyframes dance {
     from {transform: rotate(50deg) } 
     to {transform:rotate(5deg)}
-}
+}}
+
+.empty {background:linear-gradient(to bottom rgba(200,187,33,.7), rgba(212,30,11,.2));
+    position: relative;left:800px;bottom:200px;
+    width: 400px;height:400px;border: tomato  solid; border;clip-path: polygon(50% 0%, 100% 100%, 0% 100%,50% 0%);}
