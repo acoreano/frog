@@ -1,7 +1,5 @@
 .project {box-sizing:border-box;position:relative;
     display:flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;}
-
-
 .orange {flex-basis:200px;
      width:400px; height:300px; border-style: solid;border-width: 4px;background-image: url("Orange.png");background-size: contain;background-position: center;background-repeat: no-repeat;text-transform: uppercase;animation-name: dance;animation-duration: 10s;background-color:lightgoldenrodyellow;transition:left 5s ease-in 5s;position: relative;}
 
@@ -42,13 +40,18 @@ button {
         .container:hover .box {
         left: 400px;}
 
+.wrap {filter: drop-shadow(110px 110px  100px blue);}
 
+.wrap {border-radius: 50%; border-color: #000;border-style:solid;position: relative;width: 400px;height: 325px;z-index: 100;}
+.wrapper {background: linear-gradient(to bottom, red ,yellow);z-index:0 ;}
         
-.porto {background-image: url("danilo.jpg");position: relative;
+.porto {opacity: .6;z-index: 1000;
+    background-image: url("danilo.jpg");
+    position: absolute;left:45PX;bottom:30px;
     background-position:-30px;background-position-y:3px ; background-size: 500px;}
         .porto {
             width:300px;height:260px;clip-path: polygon(50% 0%, 61% 35%, 100% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
-.porto:hover {transition: linear;transition-property: all;transition-duration: 1s;transform: rotate(40deg)}
+.porto:hover {transition: linear;transition-property: all;transition-duration: 1s;transform: rotate3d(1,1,1, 360deg)}
 
 .sj {width:300px;height: 150px;}
 
@@ -92,6 +95,51 @@ button {
     to {transform:rotate(5deg)}
 }}
 
-.empty {background:linear-gradient(to bottom rgba(200,187,33,.7), rgba(212,30,11,.2));
+.empty {display: flex;
+    background:linear-gradient(to bottom, rgba(223,44,55,.8), rgba(45,89,67,1));
     position: relative;left:800px;bottom:200px;
-    width: 400px;height:400px;border: tomato  solid; border;clip-path: polygon(50% 0%, 100% 100%, 0% 100%,50% 0%);}
+    width: 400px;height:400px;border: tomato  solid;}
+
+    .empty {transition: linear;transition-duration: 2.5s;}
+
+    .fruit {}
+
+.empty::before {content: url("Orange.png");position: absolute;bottom: 100px;}
+
+.empty::after {content:url("Orange.png"); position: absolute;right:10px;}
+
+    .empty:hover {transform: rotate3d(1,1,1, 360deg);}
+
+    .newbox {
+        width:300px;height:200px;border:black;box-shadow: 10px 0px 10px 25px;;
+        border-width: 0px;position: absolute;top:400px;left:400px;}
+
+.corisco {
+    width: 50px;height: 50px;position: absolute; left:50%; top:50px;border-style:solid;border-width:2px;border-radius: 30px 89px 10px 50px;}
+
+.corisco::after{content:"";width: 50px;position: absolute;
+    height: 50px;border-style:solid;left:120%;border-width:2px;top:-2px;border-radius: 89px 30px 50px 10px;}
+
+
+.newlist {
+ list-style-image:radial-gradient(blue,yellow);}
+
+ .left-eye {border-radius: 10% 80% 10% 80%; border-style:solid;width: 25px;height:19px;position: absolute;left:54%;top:33%; background:radial-gradient(closest-side, black, white);}
+
+ .left-eye1 {background-color: tomato;z-index: 100;width: 25px;height: 19px;border-radius: 10% 80% 10% 80%; border-style:solid;width: 25px;height:19px;position: absolute;left:54%;top:33%;opacity: .3;animation-name: eyelid;animation-duration: 3s;animation-iteration-count: infinite;}
+
+ .left-eye1::after {background-color: tomato;z-index: 100;width: 25px;height: 19px;border-radius: 10% 80% 10% 80%; border-style:solid;width: 25px;height:19px;position: absolute;left:54%;top:33%;opacity: 1;animation-name: eyelid;animation-duration: 3s;animation-iteration-count: infinite;}
+
+ .right-eye {border-radius:  80% 10% 80% 10% ;border-style:solid;width: 25px;height:19px;position: absolute;left:74%;top:33%; background:radial-gradient(closest-side, black, white);}
+
+ .right-eye1 {background-color: tomato;z-index: 101;width: 25px;height: 19px;border-radius: 80% 10% 80% 10%; border-style:solid;width: 25px;height:19px;position: absolute;left:74%;top:33%;opacity: .3;animation-name: eyelid;animation-duration: 
+    3s;animation-iteration-count: infinite;}
+
+ .right-eye1::after {background-color: tomato;z-index: 101;width: 25px;height: 19px;border-radius: 80% 10% 80% 10%; border-style:solid;width: 25px;height:19px;position: absolute;left:74%;top:33%;opacity:1;animation-name: eyelid;animation-duration: 3s;animation-iteration-count: infinite;}
+
+ 
+
+ @keyframes eyelid{
+ 0% {opacity: .1;}
+ 100% {opacity: 1;}}
+
